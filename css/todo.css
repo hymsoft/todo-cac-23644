@@ -59,22 +59,36 @@
         }
 
         & .btn-delete {
-          margin-left: auto;
+          position: relative;
           border: none;
           background-color: brown;
           color: beige;
           font-weight: bold;
-          padding: 5px 10px;
           border-top-right-radius: 10px;
           border-bottom-right-radius: 10px;
-          width: 10%;
           font-size: 1.2rem;
+          width: 70px;
         }
 
         & .btn-delete:hover {
           background-color: lightseagreen;
-          color: black;
           cursor: pointer;
+        }
+
+        & .btn-delete:hover::before {
+          color: black;
+        }
+
+        & .btn-delete::before {
+          font-family: "bootstrap-icons";
+          font-size: 24px;
+          font-weight: 300;
+          content: "\F5DE";
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: #fff;
         }
       }
     }
