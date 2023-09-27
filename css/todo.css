@@ -1,11 +1,13 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+
 .container {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  width: 30%;
-  margin-left: auto;
-  margin-right: auto;
+  width: 90%;
+  max-width: 700px;
+  margin: 30px auto 0 auto;
   background-color: white;
-  padding: 30px;
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1);
 
   & h1 {
     text-align: center;
@@ -22,7 +24,7 @@
 
       & input {
         padding: 15px 10px;
-        width: 300px;
+        width: 100%;
         outline: none;
       }
 
@@ -45,6 +47,7 @@
       & li {
         list-style: none;
         background-color: lightgray;
+        color: black;
         border-radius: 10px;
         margin-top: 15px;
         display: flex;
@@ -70,6 +73,7 @@
 
         & .btn-delete:hover {
           background-color: lightseagreen;
+          color: black;
           cursor: pointer;
         }
       }
